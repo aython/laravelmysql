@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>laravelmysql</Name>
+    <ProjectGuid>{913e24d7-b784-443a-aa4d-808cf60c9761}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <SpecificPageValue>public/index.php</SpecificPageValue>
+    <StartAction>SpecificPage</StartAction>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+    <SaveServerSettingsInUserFile>false</SaveServerSettingsInUserFile>
+    <EnvName>PHPDev</EnvName>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <PHPDevAutoPort>true</PHPDevAutoPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\Console\Kernel.php" />
+    <Compile Include="app\Exceptions\Handler.php" />
+    <Compile Include="app\Http\Controllers\Auth\ForgotPasswordController.php" />
+    <Compile Include="app\Http\Controllers\Auth\LoginController.php" />
+    <Compile Include="app\Http\Controllers\Auth\RegisterController.php" />
+    <Compile Include="app\Http\Controllers\Auth\ResetPasswordController.php" />
+    <Compile Include="app\Http\Controllers\Controller.php" />
+    <Compile Include="app\Http\Controllers\HomeController.php" />
+    <Compile Include="app\Http\Controllers\ChecksjController.php" />
+    <Compile Include="app\Http\Controllers\MailController.php" />
+    <Compile Include="app\Http\Controllers\MaksoodController.php" />
+    <Compile Include="app\Http\Controllers\ReportController.php" />
+    <Compile Include="app\Http\Controllers\TableauController.php" />
+    <Compile Include="app\Http\Controllers\StudViewController.php" />
+    <Compile Include="app\Http\Middleware\EncryptCookies.php" />
+    <Compile Include="app\Http\Middleware\RedirectIfAuthenticated.php" />
+    <Compile Include="app\Http\Middleware\TrimStrings.php" />
+    <Compile Include="app\Http\Middleware\VerifyCsrfToken.php" />
+    <Compile Include="app\Http\Kernel.php" />
+    <Compile Include="app\Providers\AppServiceProvider.php" />
+    <Compile Include="app\Providers\AuthServiceProvider.php" />
+    <Compile Include="app\Providers\BroadcastServiceProvider.php" />
+    <Compile Include="app\Providers\EventServiceProvider.php" />
+    <Compile Include="app\Providers\RouteServiceProvider.php" />
+    <Compile Include="app\User.php" />
+    <Compile Include="bootstrap\cache\.gitignore" />
+    <Compile Include="bootstrap\cache\services.php" />
+    <Compile Include="bootstrap\app.php" />
+    <Compile Include="bootstrap\autoload.php" />
+    <Compile Include="config\app.php" />
+    <Compile Include="config\auth.php" />
+    <Compile Include="config\broadcasting.php" />
+    <Compile Include="config\cache.php" />
+    <Compile Include="config\database.php" />
+    <Compile Include="config\filesystems.php" />
+    <Compile Include="config\mail.php" />
+    <Compile Include="config\queue.php" />
+    <Compile Include="config\services.php" />
+    <Compile Include="config\session.php" />
+    <Compile Include="config\view.php" />
+    <Compile Include="database\factories\ModelFactory.php" />
+    <Compile Include="database\migrations\2014_10_12_000000_create_users_table.php" />
+    <Compile Include="database\migrations\2014_10_12_100000_create_password_resets_table.php" />
+    <Compile Include="database\seeds\DatabaseSeeder.php" />
+    <Compile Include="database\.gitignore" />
+    <Compile Include="public\css\app.css" />
+    <Compile Include="public\js\app.js" />
+    <Compile Include="public\.htaccess" />
+    <Compile Include="public\favicon.ico" />
+    <Compile Include="public\index.php" />
+    <Compile Include="public\robots.txt" />
+    <Compile Include="public\web.config" />
+    <Compile Include="resources\assets\js\components\Example.vue" />
+    <Compile Include="resources\assets\js\app.js" />
+    <Compile Include="resources\assets\js\bootstrap.js" />
+    <Compile Include="resources\assets\sass\app.scss" />
+    <Compile Include="resources\assets\sass\_variables.scss" />
+    <Compile Include="resources\lang\en\auth.php" />
+    <Compile Include="resources\lang\en\pagination.php" />
+    <Compile Include="resources\lang\en\passwords.php" />
+    <Compile Include="resources\lang\en\validation.php" />
+    <Compile Include="resources\views\adfs.blade.php" />
+    <Compile Include="resources\views\auth\passwords\email.blade.php" />
+    <Compile Include="resources\views\auth\passwords\reset.blade.php" />
+    <Compile Include="resources\views\auth\loginj.blade.php" />
+    <Compile Include="resources\views\auth\registerj.blade.php" />
+    <Compile Include="resources\views\layouts\app.blade.php" />
+    <Compile Include="resources\views\home.blade.php" />
+    <Compile Include="resources\views\ifr.blade.php" />
+    <Compile Include="resources\views\show.blade.php" />
+    <Compile Include="resources\views\error.php" />
+    <Compile Include="resources\views\report.blade.php" />
+    <Compile Include="resources\views\welcome.blade.php" />
+    <Compile Include="routes\api.php" />
+    <Compile Include="routes\channels.php" />
+    <Compile Include="routes\console.php" />
+    <Compile Include="routes\web.php" />
+    <Compile Include="storage\app\public\.gitignore" />
+    <Compile Include="storage\app\.gitignore" />
+    <Compile Include="storage\framework\cache\.gitignore" />
+    <Compile Include="storage\framework\sessions\.gitignore" />
+    <Compile Include="storage\framework\sessions\WEXpgQBtzyZWg4NTMij7EIwMNl1cDuqF3skCJsJR" />
+    <Compile Include="storage\framework\sessions\ZLlmANG5TsHgilUgUo8BqHXN0Owk97jGDJCPJYDR" />
+    <Compile Include="storage\framework\testing\.gitignore" />
+    <Compile Include="storage\framework\views\.gitignore" />
+    <Compile Include="storage\framework\views\3182f7b0b9601baa885b82de23115870a4f6062a.php" />
+    <Compile Include="storage\framework\views\4faa35a76b59cebcb67b45e8a945a9b5467e81fa.php" />
+    <Compile Include="storage\framework\views\5d2bd116110681bf68c3aca8c88ece1ec078aaa0.php" />
+    <Compile Include="storage\framework\views\7202b527ff38d837c186b7e42fe6b21696d2a81c.php" />
+    <Compile Include="storage\framework\views\b566d71a4463692b72db037cd57ae6305b690423.php" />
+    <Compile Include="storage\framework\.gitignore" />
+    <Compile Include="storage\logs\.gitignore" />
+    <Compile Include="storage\logs\laravel.log" />
+    <Compile Include="tests\Feature\ExampleTest.php" />
+    <Compile Include="tests\Unit\ExampleTest.php" />
+    <Compile Include="tests\CreatesApplication.php" />
+    <Compile Include="tests\TestCase.php" />
+    <Compile Include=".env" />
+    <Compile Include=".env.example" />
+    <Compile Include=".gitattributes" />
+    <Compile Include=".gitignore" />
+    <Compile Include="artisan" />
+    <Compile Include="composer.json" />
+    <Compile Include="composer.lock" />
+    <Compile Include="laravelmysql.phpproj" />
+    <Compile Include="package.json" />
+    <Compile Include="phpunit.xml" />
+    <Compile Include="readme.md" />
+    <Compile Include="server.php" />
+    <Compile Include="webpack.mix.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\Console" />
+    <Folder Include="app\Exceptions" />
+    <Folder Include="app\Http\Controllers\Auth" />
+    <Folder Include="app\Http\Controllers" />
+    <Folder Include="app\Http\Middleware" />
+    <Folder Include="app\Http" />
+    <Folder Include="app\Providers" />
+    <Folder Include="app" />
+    <Folder Include="bootstrap\cache" />
+    <Folder Include="bootstrap" />
+    <Folder Include="config" />
+    <Folder Include="database\factories" />
+    <Folder Include="database\migrations" />
+    <Folder Include="database\seeds" />
+    <Folder Include="database" />
+    <Folder Include="public\css" />
+    <Folder Include="public\js" />
+    <Folder Include="public" />
+    <Folder Include="resources\assets\js\components" />
+    <Folder Include="resources\assets\js" />
+    <Folder Include="resources\assets\sass" />
+    <Folder Include="resources\assets" />
+    <Folder Include="resources\lang\en" />
+    <Folder Include="resources\lang" />
+    <Folder Include="resources\views\auth\passwords" />
+    <Folder Include="resources\views\auth" />
+    <Folder Include="resources\views\layouts" />
+    <Folder Include="resources\views" />
+    <Folder Include="resources" />
+    <Folder Include="routes" />
+    <Folder Include="storage\app\public" />
+    <Folder Include="storage\app" />
+    <Folder Include="storage\framework\cache" />
+    <Folder Include="storage\framework\sessions" />
+    <Folder Include="storage\framework\testing" />
+    <Folder Include="storage\framework\views" />
+    <Folder Include="storage\framework" />
+    <Folder Include="storage\logs" />
+    <Folder Include="storage" />
+    <Folder Include="tests\Feature" />
+    <Folder Include="tests\Unit" />
+    <Folder Include="tests" />
+  </ItemGroup>
+</Project>
